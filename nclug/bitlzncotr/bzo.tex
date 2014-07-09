@@ -1,0 +1,99 @@
+\documentclass{beamer} \usetheme{Boadilla}
+\usepackage[tikz]{bclogo}
+\usepackage{url}
+\usepackage{listings}
+
+
+%Title stuff
+
+\title{Living in your own Private Idaho}
+\subtitle{Or BitlBee, ZNC, and OTR oh my!}
+\author{Josh Datko}
+\institute[NCLug] { NCLug }
+
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section{BitlBee}
+
+\begin{frame}{BitlBee}
+
+
+\begin{bclogo}[couleur = blue!30,arrondi = 0.1, logo = \bcbombe,
+   ombre = true]{What is BitlBee?}
+   BitlBee is an Instant Message / XMPP / MSN / Yahoo Messenger / AIM
+   / ICQ / Twitter / etc\ldots to IRC gateway.
+ \end{bclogo}
+
+\end{frame}
+
+\begin{frame}{Why}
+
+Because, IRC.
+Because, XKCD.
+
+    \begin{center}
+      \includegraphics[height=7cm]{bitlbee_xkcd.png}
+    \end{center}
+
+\end{frame}
+
+\section{ZNC}
+
+\begin{frame}{ZNC}
+
+  \begin{itemize}
+  \item IRC Bouncer. \bigskip
+  \item Well maintained, latest version is 1.4. \bigskip
+    \item Has a nice web interface. \bigskip
+\item Can manage BitlBee. Because, IRC.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Putting everything together}
+
+    \begin{center}
+      \includegraphics[width=11cm]{dd.jpg}
+    \end{center}
+
+\end{frame}
+
+\section{OTR}
+
+\begin{frame}{otr}
+
+GPG FTW! But what if somebody gets your private key? \bigskip
+
+OTR was designed with:
+
+\begin{itemize}
+\item Perfect forward secrecy. \bigskip
+ \item Digital signatures for identity authentication. \bigskip
+\item \emph{Repudiation.} Message Authentication codes for authorship
+  attestation. \bigskip
+\item Malleable encryption. \bigskip
+\end{itemize}
+
+OTR is a library and is available for many chat programs (including
+BitlBee and ZNC!)
+\end{frame}
+
+\section{Demo}
+
+\begin{frame}{Demo}
+
+
+\end{frame}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
